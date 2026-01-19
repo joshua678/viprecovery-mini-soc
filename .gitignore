@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+data/raw/
+data/zeek/
+data/suricata/
+db/
+reports/*.txt
+.DS_Store
+.vscode/
