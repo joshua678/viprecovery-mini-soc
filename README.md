@@ -3,6 +3,9 @@
 A small incident investigation pipeline built around the
 2026-01-09 "VIP Recovery" malware-traffic case PCAP.
 
+**Read the report:** [Incident report](reports/incident_report.md)  
+**Supporting output:** [Generated summary](reports/summary.md)
+
 What it does:
 - Takes a PCAP capture as evidence
 - Runs Zeek to generate structured telemetry (JSON logs)
