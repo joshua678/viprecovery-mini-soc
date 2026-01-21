@@ -1,7 +1,7 @@
 # VIP Recovery mini-SOC (PCAP -> Zeek -> SQLite -> Report)
 
 **Read the report:** [View](reports/incident_report.md)  
-**Threat model (DFD + STRIDE):** [View](reports/threat_model.md)  
+**Threat model (DFD + STRIDE):** [View](docs/threat_model.md)  
 
 A small incident investigation pipeline built around the
 2026-01-09 "VIP Recovery" malware-traffic case PCAP.
