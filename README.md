@@ -1,10 +1,10 @@
 # VIP Recovery mini-SOC (PCAP -> Zeek -> SQLite -> Report)
 
+**Read the report:** [View](reports/incident_report.md)  
+**Threat model (DFD + STRIDE):** [View](reports/threat_model.md)  
+
 A small incident investigation pipeline built around the
 2026-01-09 "VIP Recovery" malware-traffic case PCAP.
-
-**Read the report:** [Incident report](reports/incident_report.md)  
-**Supporting output:** [Generated summary](reports/summary.md)
 
 What it does:
 - Takes a PCAP capture as evidence
@@ -144,6 +144,14 @@ sqlite3 db/viprecovery.sqlite < sql/quick_checks.sql | tee reports/quick_checks.
 # 5) Summary report
 python scripts/make_report.py --db db/viprecovery.sqlite --out reports/summary.md
 ```
+
+---
+
+## Outputs
+- `reports/incident_report.md` (hand-written case report)
+- `reports/threat_model.md` (DFD + STRIDE)
+- `reports/summary.md` (generated pipeline summary)
+- `reports/quick_checks.txt` (SQL triage output)
 
 ---
 
